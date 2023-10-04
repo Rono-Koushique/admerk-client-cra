@@ -1,8 +1,6 @@
 import { Box, Container, Text } from "@chakra-ui/react";
 
-type Props = {};
-
-export default function NotFound({}: Props) {
+export default function NotFound() {
     return (
         <Box>
             <Container variant="wider" maxW="container.xl">

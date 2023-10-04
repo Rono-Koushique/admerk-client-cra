@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Accounting",
         "href": "/accounting",
-        "icon": "mdi:dollar", 
+        "icon": "mdi:dollar",
         "children": [
             {
                 "id": 101,

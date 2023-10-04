@@ -20,8 +20,6 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { registerUser } from "services/api/auth";
 import { useNavigate } from "react-router-dom";
 
-type Props = {};
-
 function convertDateFormatBackend(inputDate: string) {
     const parts = inputDate.split("-");
     const year = parseInt(parts[0], 10);
@@ -33,7 +31,7 @@ function convertDateFormatBackend(inputDate: string) {
     return formattedDate;
 }
 
-export default function RegisterUser({}: Props) {
+export default function RegisterUser() {
     const navigate = useNavigate();
     const toast = useToast();
 

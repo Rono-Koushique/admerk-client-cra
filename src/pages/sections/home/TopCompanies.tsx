@@ -14,9 +14,7 @@ import companyData from "assets/data/companies.json";
 
 const colors = ["blue", "orange", "green", "yellow"];
 
-type Props = {};
-
-export default function TopCompanies({}: Props) {
+export default function TopCompanies() {
     const companies = companyData.slice(0, 4);
     return (
         <SimpleGrid

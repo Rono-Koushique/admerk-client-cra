@@ -10,9 +10,7 @@ import {
 import { Icon } from "@iconify/react/dist/iconify.js";
 import categories from "assets/data/categories.json";
 
-type Props = {};
-
-export default function PopularCategories({}: Props) {
+export default function PopularCategories() {
     const popularCategories = categories.slice(0, 7);
 
     return (

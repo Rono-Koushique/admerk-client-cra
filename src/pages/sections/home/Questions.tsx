@@ -22,8 +22,7 @@ const sets = [
         answer: "The job listings on our platform are open to refugees, and we do not impose specific eligibility criteria for refugee applicants. We aim to create an inclusive environment where refugees have equal access to job opportunities.",
     },
     {
-        question:
-            "How do I create an account and start searching for jobs as a refugee?",
+        question: "How do I create an account and start searching for jobs as a refugee?",
         answer: "Creating an account is easy. Simply visit our website and click on the 'Sign Up' or 'Register' button. Follow the prompts to provide your information. Once your account is set up, you can start searching for jobs by entering keywords, location, or other preferences in the search bar.",
     },
     {
@@ -33,9 +32,7 @@ const sets = [
     },
 ];
 
-type Props = {};
-
-export default function Questions({}: Props) {
+export default function Questions() {
     return (
         <>
             <Accordion px={2} allowMultiple={true}>
@@ -43,10 +40,7 @@ export default function Questions({}: Props) {
                     return (
                         <Fragment key={`set-${idx}`}>
                             {!!idx && <Divider borderColor="slate.400" />}
-                            <AccordionItem
-                                border="none"
-                                py={{ base: 4, lg: 5 }}
-                            >
+                            <AccordionItem border="none" py={{ base: 4, lg: 5 }}>
                                 <AccordionButton
                                     px={0}
                                     _hover={{

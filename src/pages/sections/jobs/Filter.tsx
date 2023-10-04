@@ -9,9 +9,7 @@ import {
     Center,
 } from "@chakra-ui/react";
 
-type Props = {};
-
-export default function Filter({}: Props) {
+export default function Filter() {
     return (
         <Accordion
             allowMultiple={true}
@@ -118,11 +116,7 @@ function AccordionIcon({ isExpanded }: IconProps) {
                 bgColor: "pink.300",
             }}
         >
-            {isExpanded ? (
-                <MinusIcon fontSize="0.6rem" />
-            ) : (
-                <AddIcon fontSize="0.6rem" />
-            )}
+            {isExpanded ? <MinusIcon fontSize="0.6rem" /> : <AddIcon fontSize="0.6rem" />}
         </Center>
     );
 }

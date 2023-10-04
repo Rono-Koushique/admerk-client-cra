@@ -12,9 +12,7 @@ import { Link } from "react-router-dom";
 import FooterNewsletter from "components/forms/FooterNewsletter";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
-type Props = {};
-
-export default function Footer({}: Props) {
+export default function Footer() {
     return (
         <Box>
             <Container variant="wider" maxW="container.xl" py={12} mt={8}>

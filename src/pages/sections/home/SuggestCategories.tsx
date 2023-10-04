@@ -1,9 +1,7 @@
 import { Button, Stack, Text } from "@chakra-ui/react";
 import categories from "assets/data/categories.json";
 
-type Props = {};
-
-export default function SuggestCategories({}: Props) {
+export default function SuggestCategories() {
     const suggestCategories = categories.slice(0, 3).map((category) => category.name);
 
     return (

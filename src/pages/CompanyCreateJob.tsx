@@ -17,21 +17,17 @@ import {
     useToast,
 } from "@chakra-ui/react";
 import { Field, Form, Formik, FormikValues } from "formik";
-import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { createJob } from "services/api/company";
-import { getAllCategories } from "services/api/jobs";
 import * as Yup from "yup";
+import allCategories from "assets/data/serverCategories.json";
 
 const convertFromSnake = (str: string) => {
     return str.split("_").join(" ");
 };
 
-type Props = {};
-
-export default function CompanyCreateJob({}: Props) {
+export default function CompanyCreateJob() {
     const toast = useToast();
-    const [allCategories, setAllCategories] = useState<string[]>([]);
     const allJobTypes = ["fixed_price", "full_time", "part_time", "freelance"];
     const allExperiences = [
         "fresher",
@@ -41,13 +37,6 @@ export default function CompanyCreateJob({}: Props) {
         "intermediate",
     ];
     const allSalaryDurations = ["weekly", "monthly", "hourly"];
-
-    useEffect(() => {
-        (async () => {
-            const allCategoriesData = await getAllCategories();
-            setAllCategories(allCategoriesData);
-        })();
-    }, []);
 
     const initialValues = {
         job_title: "",
@@ -184,17 +173,16 @@ export default function CompanyCreateJob({}: Props) {
                                             textTransform="capitalize"
                                         >
                                             <option value=""></option>
-                                            {allCategories &&
-                                                allCategories.map((category) => (
-                                                    <Text
-                                                        as="option"
-                                                        key={category}
-                                                        value={category}
-                                                        textTransform="capitalize"
-                                                    >
-                                                        {convertFromSnake(category)}
-                                                    </Text>
-                                                ))}
+                                            {allCategories.map((category) => (
+                                                <Text
+                                                    as="option"
+                                                    key={category}
+                                                    value={category}
+                                                    textTransform="capitalize"
+                                                >
+                                                    {convertFromSnake(category)}
+                                                </Text>
+                                            ))}
                                         </Field>
                                         <FormErrorMessage mt={0} fontSize="md">
                                             {errors.category}

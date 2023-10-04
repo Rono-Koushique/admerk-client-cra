@@ -6,9 +6,7 @@ import ApplicationCard from "./sections/userDashboard/ApplicationCard";
 import { Helmet } from "react-helmet-async";
 import Loading from "components/helpers/Loading";
 
-type Props = {};
-
-export default function UserDashboard({}: Props) {
+export default function UserDashboard() {
     const [appliedJobs, setAppliedJobs] = useState<Application[] | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
 

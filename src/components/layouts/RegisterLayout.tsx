@@ -11,9 +11,7 @@ import {
 import { Helmet } from "react-helmet-async";
 import { NavLink as RouterLink, Outlet } from "react-router-dom";
 
-type Props = {};
-
-export default function RegisterLayout({}: Props) {
+export default function RegisterLayout() {
     return (
         <>
             <Helmet>
@@ -63,9 +61,7 @@ export default function RegisterLayout({}: Props) {
                                     border="2px"
                                     borderColor="purple.500"
                                 >
-                                    <RegNavLink to="/register/user">
-                                        User
-                                    </RegNavLink>
+                                    <RegNavLink to="/register/user">User</RegNavLink>
                                     <RegNavLink to="/register/company">
                                         Company
                                     </RegNavLink>

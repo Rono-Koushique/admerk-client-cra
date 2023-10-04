@@ -46,9 +46,7 @@ function formatDate(inputDateString: string) {
     return formattedDateString;
 }
 
-type Props = {};
-
-export default function JobDetails({}: Props) {
+export default function JobDetails() {
     const job = useLoaderData() as Job;
     const toast = useToast();
 

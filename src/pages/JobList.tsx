@@ -15,9 +15,7 @@ import { Helmet } from "react-helmet-async";
 import CallToAction from "./sections/CallToAction";
 import { useLoaderData } from "react-router-dom";
 
-type Props = {};
-
-export default function JobList({}: Props) {
+export default function JobList() {
     const allJobs = useLoaderData() as JobSummary[] | null;
 
     return (

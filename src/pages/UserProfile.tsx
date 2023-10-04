@@ -16,9 +16,7 @@ import { Helmet } from "react-helmet-async";
 import { getUserInfo } from "services/api/user";
 import Loading from "components/helpers/Loading";
 
-type Props = {};
-
-export default function UserProfile({}: Props) {
+export default function UserProfile() {
     const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
 

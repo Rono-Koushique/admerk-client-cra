@@ -20,9 +20,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { registerCompany } from "services/api/auth";
 import { useNavigate } from "react-router-dom";
 
-type Props = {};
-
-export default function RegisterCompany({}: Props) {
+export default function RegisterCompany() {
     const navigate = useNavigate();
     const toast = useToast();
 

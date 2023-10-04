@@ -6,9 +6,7 @@ import Navlink from "./Navlink";
 import AuthBtn from "./AuthBtn";
 import { useAuth } from "lib/context/AuthProvider";
 
-type Props = {};
-
-export default function TopbarScroll({}: Props) {
+export default function TopbarScroll() {
     const [sticky, setSticky] = useState<boolean>();
     const { authInfo } = useAuth();
 

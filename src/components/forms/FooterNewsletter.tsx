@@ -2,17 +2,13 @@ import { Box, Button, FormControl, Input, Stack } from "@chakra-ui/react";
 import { Formik, Form, Field, type FormikValues } from "formik";
 import * as Yup from "yup";
 
-type Props = {};
-
-export default function FooterNewsletter({}: Props) {
+export default function FooterNewsletter() {
     const initialValue = {
         email: "",
     };
 
     const validationSchema = Yup.object().shape({
-        email: Yup.string()
-            .email("Invalid email address")
-            .required("Email is required"),
+        email: Yup.string().email("Invalid email address").required("Email is required"),
     });
 
     const handleSubmit = (values: FormikValues) => {
@@ -28,9 +24,7 @@ export default function FooterNewsletter({}: Props) {
             >
                 {({ handleChange, values, errors, touched }) => (
                     <Stack as={Form} direction="row" spacing={0}>
-                        <FormControl
-                            isInvalid={!!errors.email && touched.email}
-                        >
+                        <FormControl isInvalid={!!errors.email && touched.email}>
                             <Field name="title">
                                 {() => (
                                     <Input

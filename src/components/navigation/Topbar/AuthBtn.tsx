@@ -6,9 +6,7 @@ import { Spinner } from "@chakra-ui/react";
 import { logoutUser } from "services/api/auth";
 import { useNavigate } from "react-router-dom";
 
-type Props = {};
-
-export default function AuthBtn({}: Props) {
+export default function AuthBtn() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const { authInfo, setAuthInfo, authLoading } = useAuth();
     const navigate = useNavigate();

@@ -22,9 +22,7 @@ import Questions from "./sections/home/Questions";
 import HowItWorks from "./sections/home/HowItWorks";
 import { Helmet } from "react-helmet-async";
 
-type Props = {};
-
-export default function Home({}: Props) {
+export default function Home() {
     return (
         <>
             <Helmet>

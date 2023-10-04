@@ -18,9 +18,7 @@ import { Link } from "react-router-dom";
 import { BsBookmarkPlus } from "react-icons/bs";
 import LoadingComp from "components/helpers/LoadingComp";
 
-type Props = {};
-
-export default function CompanyDashboard({}: Props) {
+export default function CompanyDashboard() {
     const [postedJobs, setPostedJobs] = useState<Job[] | null>(null);
     const [applications, setApplications] = useState<Application[] | null>(null);
     const [loading, setLoading] = useState<boolean>(false);

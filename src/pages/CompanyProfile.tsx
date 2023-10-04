@@ -15,9 +15,7 @@ import { Helmet } from "react-helmet-async";
 import { getCompanyInfo } from "services/api/company";
 import LoadingComp from "components/helpers/LoadingComp";
 
-type Props = {};
-
-export default function CompanyProfile({}: Props) {
+export default function CompanyProfile() {
     const [companyInfo, setCompanyInfo] = useState<CompanyInfo | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
 

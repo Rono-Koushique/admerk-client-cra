@@ -1,8 +1,6 @@
 import { Heading, Select, Stack } from "@chakra-ui/react";
 
-type Props = {};
-
-export default function Sorter({}: Props) {
+export default function Sorter() {
     return (
         <Stack direction="row" align="center" spacing={2}>
             <Heading size="sm" fontWeight={600} color="slate.700">

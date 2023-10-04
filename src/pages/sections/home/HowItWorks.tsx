@@ -2,9 +2,7 @@ import { Box, Center, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import workStep from "assets/data/workStep.json";
 
-type Props = {};
-
-export default function HowItWorks({}: Props) {
+export default function HowItWorks() {
     return (
         <SimpleGrid
             gridTemplateColumns={"repeat(auto-fit, minmax(min(15rem, 100%), 1fr))"}

@@ -14,9 +14,7 @@ import {
 import { Fragment } from "react";
 import whyUs from "assets/data/whyus.json";
 
-type Props = {};
-
-export default function WhyUs({}: Props) {
+export default function WhyUs() {
     return (
         <Stack>
             <Text fontSize="xl" fontWeight={600} color="purple.500">

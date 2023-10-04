@@ -5,9 +5,7 @@ import { getAllJobApplications } from "services/api/company";
 import ApplicationCard from "./sections/companyApplications/ApplicationCard";
 import LoadingComp from "components/helpers/LoadingComp";
 
-type Props = {};
-
-export default function CompanyApplications({}: Props) {
+export default function CompanyApplications() {
     const [applications, setApplications] = useState<Application[] | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
 

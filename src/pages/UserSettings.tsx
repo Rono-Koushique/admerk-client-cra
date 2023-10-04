@@ -18,9 +18,7 @@ import { Helmet } from "react-helmet-async";
 import { changeAccountPassword } from "services/api/user";
 import * as Yup from "yup";
 
-type Props = {};
-
-export default function UserSettings({}: Props) {
+export default function UserSettings() {
     const toast = useToast();
 
     const initialValues = {

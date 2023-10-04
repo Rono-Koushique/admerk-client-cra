@@ -1,8 +1,6 @@
 import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
 
-type Props = {};
-
-export default function CallToAction({}: Props) {
+export default function CallToAction() {
     return (
         <Container variant="wider" maxW="container.xl">
             <Stack
