@@ -21,7 +21,7 @@ export default function TopbarScroll() {
     useEffect(() => {
         window.addEventListener("scroll", setStickyNav);
         return () => window.removeEventListener("scroll", setStickyNav);
-    }, [window, setStickyNav]);
+    }, []);
 
     return (
         <Box

@@ -1,8 +1,8 @@
+import "styles/App.css";
 import { router } from "./Router";
 import { ChakraProvider } from "@chakra-ui/react";
 import { RouterProvider } from "react-router-dom";
 import { theme } from "lib/chakra/Theme";
-import "styles/App.css";
 import AuthProvider from "./lib/context/AuthProvider";
 import { HelmetProvider } from "react-helmet-async";
 
